@@ -1,0 +1,54 @@
+img
+{
+    display: block;
+    margin: auto;
+}
+body
+{
+    background-color:rgb(178, 226, 178);
+}
+h1
+{
+    color:darkgreen;
+    font-size: xx-large;
+    font-family:Arial;
+}
+p{
+    text-align: justify;
+    font-size: larger;
+}
+table{
+    border-radius:2mm;
+    border-width: 1mm;
+    border-color:darkgreen;
+    box-shadow: 30mm;
+}
+ol
+{
+    font-size:large;
+}
+.AM
+{
+    font-family: cursive;
+    font-size: x-large;
+    color:brown;
+
+}
+.Edu
+{
+   font-family: cursive;
+    font-size: x-large;
+    color:chocolate; 
+}
+h2
+{
+ font-family:'Times New Roman';
+ color:indigo;
+ font-size: x-large;
+ text-decoration: underline;
+}
+td{
+    padding-left: 3cm;
+    padding-right: 3cm;
+    font-style: italic;
+}
