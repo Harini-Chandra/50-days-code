@@ -1,0 +1,49 @@
+body
+{
+    background-color: peachpuff;
+}
+h1
+{
+ color:brown;
+ text-align: center;
+ font-family:serif;
+}
+.hm
+{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.hm img
+{ 
+   
+    width:400px;
+    height:auto;
+    border-radius: 2mm;
+}
+.hm figure
+{
+   flex:calc(30% - 20px);
+   margin:0;
+   text-align: center;
+}
+.footer
+{
+    display:flex;
+    background-color:burlywood;
+    width: 100%;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium';
+    justify-content: center;
+    color:chocolate;
+}
+.hm h2
+{
+    color:sienna;
+    text-align: center;
+    font-family:monospace;
+    font-size: xx-large;
+}
