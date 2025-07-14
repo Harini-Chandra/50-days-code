@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="paraa">
+        Hello. DOM intro 
+    </h1>
+    <p class="text">How are you?</p>
+    <p class="text">How do u do?</p>
+    <p class="text">Hope ur doing fine</p>
+    <p class="sub">Good Morning</p>
+    <p class="sub">Good Afternoon</p>
+    <p class="sub">Good Evening</p>
+    <p class="sub">Good Night</p>
+   
+    <button onclick="fun()">Click</button>
+    <form name="myform">
+        <input type="text" name="username">
+    </form>
+    <script>
+        const para=document.getElementById("paraa");
+        para.style.color="red";
+        const items=document.getElementsByClassName("text");
+        for(let i=0;i<items.length;i++)
+    {
+        items[i].style.fontFamily = "san-serif";
+    }
+    const pand=document.getElementsByTagName("p");
+    pand[1].innerHTML="I am fine";
+    let fun=()=>
+    {
+        const pand=document.getElementsByTagName("p");
+        pand[2].innerHTML="what do u do?";
+    }
+    //only a single element in css will change
+    const ele=document.querySelector("#paraa");
+    ele.style.backgroundColor="lightGrey";
+    const txt=document.querySelector(".text");
+    txt.style.backgroundColor="yellow";
+    const sunny=document.querySelectorAll(".sub");
+    for(let i=0;i<sunny.length;i++)
+    { 
+        sunny[i].style.backgroundColor="lightGreen";
+    }    
+    document.body.style.backgroundColor="tan";
+    const frm=document.forms["myform"];
+    frm.username.value="haru";
+    </script>
+</body>
+</html>
