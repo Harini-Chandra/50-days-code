@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button id="butt">CLICK</button>
+  <br>
+  <br>
+  <button id="but">Click</button>
+  <br>
+  <br>
+  <button id="bot">click me</button>
+  <br>
+  <p id="text">Hover over me</p>
+  <div class="con">
+    <h2>HEADING</h2>
+    <input type="text" id="keyup" placeholder="press">
+  </div>
+  <br>
+  <input type="text">
+  <br>
+  <br>
+  <input type="text" id="inputing">
+  <br>
+  <br>
+  <select id="opt">
+    <option>Apple</option>
+    <option>Kiwi</option>
+    </select>
+    <div class="submit">
+        <h2>Form Submission</h2>
+        <form id="frm">
+            <input type="text" placeholder="Ur Email">
+            <br>
+            <br>
+            <input type="password" placeholder="Enter ur password">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <button id="dbl">DoubleClick</button>
+    <br>
+    <br>
+    <input type="text" id="inpt">
+  <script>
+    document.getElementById("butt").addEventListener("click",function()
+   {
+    alert ("You clicked the button");
+   });
+   document.getElementById("but").addEventListener("click",clickme=()=>
+   {
+    alert ("The button was clicked");
+   });
+   document.getElementById("bot").addEventListener("click",onclick);
+   function onclick()
+   {
+    alert ("clicked me");
+   }
+   document.getElementById("text").addEventListener("mouseover",function()
+{
+    this.style.color="red";
+    this.style.backgroundColor="yellow";
+    this.style.fontFamily="Cursive";
+    this.style.fontSize="x-large";
+});
+document.getElementById("text").addEventListener("mouseout",mouse);
+function mouse()
+{
+    this.style.color="purple";
+    this.style.backgroundColor="lightgreen";
+    this.style.fontFamily="Cursive";
+    this.style.fontSize="x-large";
+}
+document.addEventListener("keydown",function(haru)
+{
+    console.log("You typed "+haru.key);
+});
+document.getElementById("keyup").addEventListener(("keyup"),function(event){
+    console.log("You relesed "+event.key);
+});
+document.getElementById("inputing").addEventListener("input",function()
+    {
+        console.log("Current Input "+this.value);
+    });
+    document.getElementById("opt").addEventListener("change",function()
+{
+    alert("U chose this option "+this.value);
+});
+document.getElementById("frm").addEventListener("submit",function(event)
+{
+    event.preventDefault();
+    alert("Ur from is submitted");
+})
+document.getElementById("dbl").addEventListener("dblclick",function()
+{
+    alert("Double click is detected");
+});
+document.getElementById("inpt").addEventListener("focus",function()
+{
+    this.style.backgroundColor="purple";
+});
+document.getElementById("inpt").addEventListener("blur",function()
+{
+    this.style.backgroundColor="red";
+});
+  </script>
+</body>
+</html>

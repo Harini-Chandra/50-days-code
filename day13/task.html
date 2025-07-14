@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inpt">
+    <br>
+    <p id="opt"></p>
+    <button id="pop">alert</button>
+    <br>
+
+    <script>
+        document.getElementById("inpt").addEventListener("focus",function()
+    {
+        this.style.backgroundColor="yellow";
+    });
+    document.getElementById("pop").addEventListener("dblclick",function()
+{
+    alert("Double click has been pressed");
+});
+ document.getElementById("inpt").addEventListener("blur",function()
+    {
+        this.style.backgroundColor="pink";
+    });
+    document.getElementById("inpt").addEventListener("keydown",function()
+{
+    opt.innerHTML=this.value;
+});
+
+
+    </script>
+</body>
+</html>
