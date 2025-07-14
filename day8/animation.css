@@ -1,0 +1,47 @@
+body
+{
+    background-color: peachpuff;
+}
+.hm
+{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.hm img
+{ 
+   
+    width:400px;
+    height:auto;
+    border-radius: 2mm;
+}
+.hm figure
+{
+   flex:calc(30% - 20px);
+   margin:0;
+   text-align: center;
+}
+@keyframes slideDown{
+    from{
+            transform:translateY(0);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+.hm img
+{
+    animation: slideDown;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: paused; 
+}
+.hm img:hover
+{
+    animation-play-state: running;
+}

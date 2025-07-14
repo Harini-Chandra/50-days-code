@@ -1,0 +1,105 @@
+body
+{
+    background-color: black;
+}
+.bar
+{
+    text-align: center;
+}
+.bar a
+{
+   color: white; 
+   font-family: Georgia;
+   font-size:xx-large;
+   padding: 3cm;
+}
+.home
+{
+    height:30cm;
+}
+h1
+{   
+    text-align: center;
+    color: darkviolet;
+    font-family:'Lucida Sans';
+    font-size:xx-large;
+}
+.home h2{
+    color:gold;
+    height: 1cm;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Lucida Sans';
+
+}
+img
+{
+    display: block;
+    margin: auto;
+}
+.AU
+{
+    height:30cm;
+}
+.para
+{
+    color: mediumslateblue;
+    font-size:x-large;
+    text-align: center;
+    font-family:'Times New Roman';
+}
+.serv h3{
+    color: mediumpurple;
+    font-family: 'Times New Roman';
+    font-size:xx-large;
+}
+.serv
+{
+    height:30cm;
+}
+.serv h5
+{
+  color: gold;
+  font-size:xx-large;
+  font-family:'Gill Sans MT';
+}
+.serv ol
+{
+    color:mediumslateblue;
+    font-size:x-large;
+}
+.foot{
+    background-color:rgb(89, 177, 177);
+    height: 5cm;
+    width: 100%;
+}
+.foot h2
+{
+    color:indigo;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Lucida Sans';
+}
+.foot ol
+{
+  color:darkviolet;
+  font-size: x-large;
+  font-family:'Times New Roman';
+}
+@keyframes slidedown
+{
+    from
+    {
+        transform:translateX(-100%);
+    }
+    to
+    {
+        transform: translateX(0);
+    }
+}
+.home img{
+    animation: slidedown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
