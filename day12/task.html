@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Website For Implementing DOM </h1>
+<p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora vitae temporibus dolore blanditiis?</p>
+    <p class="text"> Esse, qui repudiandae. Architecto, iure porro, provident placeat eveniet perspiciatis unde cupiditate sint nihil ducimus suscipit!</p>
+    <p class="text"> Error iure maxime omnis, nesciunt expedita ad laborum inventore nisi! Molestias officia perferendis obcaecati iusto itaque perspiciatis, cupiditate ipsa eius repellat.<p>
+        <button onclick="fun()">Change</button>
+    <script>
+        let fun=()=>
+    {
+      const title=document.getElementById("heading");
+      title.innerHTML="DOCUMENT OBJECT MODEL";
+      title.style.color="white";
+      title.style.backgroundColor="Grey";
+      const para=document.getElementsByClassName("text");
+      for(let i=0;i<para.length;i++)
+      {
+        para[i].style.fontFamily="Cursive";
+      }
+      const txt=document.getElementsByTagName("p");
+      txt[0].style.color="brown";
+      txt[1].style.color="blue";
+      txt[2].style.color="darkGreen";
+      const wrd=document.querySelector(".text");
+      wrd.style.fontSize="x-large";
+      const prmpt=document.querySelectorAll(".text");
+      for(let i=0;i<prmpt.length;i++)
+      {
+        prmpt[i].style.backgroundColor="lightBlue";
+      }
+      document.body.style.backgroundColor="pink";
+    }
+    </script>    
+</body>
+</html>
